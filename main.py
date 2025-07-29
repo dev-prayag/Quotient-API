@@ -105,3 +105,9 @@ async def compare_screenshot(guild_id: int, req: OCRRequest):
             return {"match": True, "matched_with": ref}
 
     return {"match": False}
+
+
+# ✅ TEST ROUTE FOR RAILWAY ROOT CHECK
+@app.get("/")
+async def root():
+    return {"message": "API is running!"}
